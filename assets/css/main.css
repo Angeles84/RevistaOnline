@@ -325,7 +325,7 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   box-sizing: border-box;
-  padding-top: 0.35em;
+  padding-top: 0.302em;
 }
 .nav .nav__menu {
   box-sizing: border-box;
@@ -354,6 +354,25 @@ h1 {
   padding-left: 0.5em;
 }
 
+.nav__input {
+  width: 47%;
+}
+@media (min-width: 576px) {
+  .nav__input {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .nav__input {
+    width: 35%;
+  }
+}
+@media (min-width: 992px) {
+  .nav__input {
+    width: 33%;
+  }
+}
+
 .nav__menu .nav__menu-items .nav__item a {
   text-decoration: none;
   text-transform: uppercase;
@@ -375,11 +394,13 @@ h1 {
   margin: 0.7em;
   cursor: pointer;
   box-sizing: border-box;
+  padding-top: 1em;
 }
 
 .contenido-noticia_cuerpo img {
   width: 100%;
-  height: 50vh;
+  height: 33vh;
+  object-fit: cover;
 }
 @media (min-width: 576px) {
   .contenido-noticia_cuerpo img {
@@ -391,11 +412,22 @@ h1 {
   padding: 0.313em 0.625em;
 }
 
+.newsletter {
+  width: 100%;
+  text-align: center;
+  padding: 3em 0.7em 1.875em 0.7em;
+  box-sizing: border-box;
+}
+.newsletter p {
+  padding-bottom: 0.5em;
+}
+
 .article__side {
   box-sizing: border-box;
   display: none;
-  padding-left: 1em;
+  padding-left: 1.5em;
   padding-right: 0.4em;
+  padding-top: 0.7em;
 }
 @media (min-width: 768px) {
   .article__side {
@@ -431,40 +463,13 @@ h1 {
   width: 100%;
 }
 
-.newsletter {
-  width: 100%;
-  text-align: center;
-  padding-top: 3em;
-  padding-bottom: 1.875em;
-  box-sizing: border-box;
-}
-
 .footer {
   width: 100%;
   text-align: center;
-  padding-top: 1em;
+  padding-top: 1.4em;
   padding-bottom: 3em;
 }
 
-/*
-.footer {
-    width: 100%;
-    //padding: 1rem 0;
-    text-align: center;
-
-
-    &__info {
-        font-size: 1.5rem;
-        font-weight: bold;
-
-        @include respond-to('lg') {
-            font-size: 1rem;
-            padding: 1rem 0;
-        }
-    }
-
-}
-*/
 .newsletter__group input,
 .newsletter__group button {
   display: inline-block;
@@ -480,6 +485,7 @@ h1 {
 
 .nav__item-input {
   border-radius: 30px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

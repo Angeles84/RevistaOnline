@@ -1,4 +1,3 @@
-
 .nav {
     width: 95%;
     padding: 0.625em;
@@ -15,7 +14,7 @@
         font-weight: bold;
         text-transform: uppercase;
         box-sizing: border-box;
-        padding-top: 0.35em;
+        padding-top: 0.302em;
       
     }
     .nav__menu {
@@ -40,6 +39,19 @@
     }
     .nav__item-input {
         padding-left: 0.5em;
+    }
+}
+
+.nav__input {
+    width: 47%;
+    @include respond-to('sm') {
+        width: 40%;
+    }
+    @include respond-to('md') {
+        width: 35%;
+    }
+    @include respond-to('lg') {
+        width: 33%;
     }
 }
 
