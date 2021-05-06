@@ -306,7 +306,7 @@ h1 {
 }
 .nav {
   width: 95%;
-  padding: 0.625em;
+  padding: 0.625em 0.625em 0.8em 0.625em;
   border-bottom: 1px solid gray;
   margin: 0 auto;
 }
@@ -325,7 +325,7 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   box-sizing: border-box;
-  padding-top: 0.302em;
+  padding-top: 0.4em;
 }
 .nav .nav__menu {
   box-sizing: border-box;
@@ -352,25 +352,6 @@ h1 {
 }
 .nav__menu .nav__menu-items .nav__item .nav__item-input {
   padding-left: 0.5em;
-}
-
-.nav__input {
-  width: 47%;
-}
-@media (min-width: 576px) {
-  .nav__input {
-    width: 40%;
-  }
-}
-@media (min-width: 768px) {
-  .nav__input {
-    width: 35%;
-  }
-}
-@media (min-width: 992px) {
-  .nav__input {
-    width: 33%;
-  }
 }
 
 .nav__menu .nav__menu-items .nav__item a {
@@ -486,6 +467,26 @@ h1 {
 .nav__item-input {
   border-radius: 30px;
   width: 100%;
+  padding-top: 0.2em;
+}
+
+.nav__input {
+  width: 43%;
+}
+@media (min-width: 576px) {
+  .nav__input {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .nav__input {
+    width: 35%;
+  }
+}
+@media (min-width: 992px) {
+  .nav__input {
+    width: 33%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
